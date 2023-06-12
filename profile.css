@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  body{
+    background-image: url(https://wallpapers.com/images/featured/tykbiycf0hjhjo39.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+  }
+  .tudo{
+    background-color: #E7689D;
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+  }
+  .parte1{
+    display: flex;
+    place-items: end;
+    justify-content: center;
+    height: 230px;
+  }
+  .profile p{
+    height: 40px;
+    display: flex;
+    place-items: end;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+  }
+  .icon{
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/37785617165363.562d61306b0aa.jpg);
+    border-radius: 100%;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  }
+  .parte2{
+    display: flexbox;
+    place-items: end;
+    justify-content: start;
+    height: 140px;
+    padding: 46px;
+    
+  }
+  .info{
+    height: 54px;
+  }
+  .titulo{
+    color: #fff;
+    font-size: 18px;
+  }
+  .texto{
+    color: pink;
+  }
+  .parte3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+   
+    place-items: end;
+  }
+  .social_icons{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social_icons div{
+    height: 70px;
+    width: 70px;
+  }
+  .icon1{
+    background-image: url(https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png);
+    background-size: cover;
+    border-radius: 100%;
+  }
+  .icon2{
+    background-image: url(https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png);
+    background-size: cover;
+    border-radius: 100%;
+  }
+  .preto{
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+  p:hover{
+    cursor: default;
+  }
+  .social_icons div:hover{
+    transform: scale(1.1);
+  }
+  .voltar{
+    height: 40px;
+    width: 40px;
+    background-image: url(https://cdn.icon-icons.com/icons2/1509/PNG/512/gtkgobackltr_104397.png);
+    background-size: cover;
+    position: relative;
+    top: -540px;
+    left: 20px;
+  }
+  hr{
+    height: 3px;
+    background: pink;
+    border:none
+  }

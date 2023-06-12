@@ -1,0 +1,490 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: #C2E4EF;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .all{
+    background-color: #fff;
+    width: 850px;
+    box-shadow: 0px 3px 30px #464646;
+    
+  }
+  header{
+    width: 900px;
+    height: 100px;
+    padding: 24px;
+  }
+  nav{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_parte1{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    place-items: end;
+  }
+  .logo_menu{
+    background-image: url(https://cdn.icon-icons.com/icons2/930/PNG/512/menu_icon-icons.com_72311.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+  .logo_studioGhibli{
+    background-image: url(https://www.animesxis.com.br/wp-content/uploads/2015/02/Studio-Ghibli.png);
+    background-size: cover;
+    width: 156px;
+    height: 70px;
+  }
+  .nav_parte2{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    place-items: end;
+  }
+  .personal{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .personal p{
+    background-color: #E7689D;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .personal p:hover{
+    cursor: default;
+  }
+  .profile{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .profile p:hover{
+    cursor: pointer;
+  }
+  .icon{
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/37785617165363.562d61306b0aa.jpg);
+    border-radius: 100%;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  section{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    gap: 32px;
+    place-items: end;
+    padding-left: 22px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  .Section_Nav p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  
+  main{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+  .slider{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 20px;
+  }
+  .navigation-bar{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+  }
+  input{
+    display: none;
+  }
+  .manual-btn{
+    border: 2px solid #fff;
+    padding: 12px;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 4px;
+    width: 4px;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  .manual-btn:hover{
+    background: #fff;
+    transition: .4s;
+  }
+  .slides{
+    display: flex;
+    width: 1000%;
+    height: 100%;
+  }
+  .slide{
+    width: 10%;
+    transition: .8s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -10%;
+  }
+  #radio3:checked ~ .first{
+    margin-left: -20%;
+  }
+  #radio4:checked ~ .first{
+    margin-left: -30%;
+  }
+  #radio5:checked ~ .first{
+    margin-left: -40%;
+  }
+  #radio6:checked ~ .first{
+    margin-left: -50%;
+  }
+  #radio7:checked ~ .first{
+    margin-left: -60%;
+  }
+  #radio8:checked ~ .first{
+    margin-left: -70%;
+  }
+  #radio9:checked ~ .first{
+    margin-left: -80%;
+  }
+  #radio10:checked ~ .first{
+    margin-left: -90%;
+  }
+  
+  
+  .Photo_Gallery{
+    width: 828px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+  }
+  .Photos{
+    
+    width: 800px;
+    height: 850px;
+    display: grid;
+    grid-template-areas: 
+      "f1 f2 f3 f10"
+      "f4 f5 f6 f11"
+      "f7 f8 f9 f12";
+  }
+  .foto{
+      margin: 14px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .foto:nth-child(1){
+      grid-area: f1;
+      background-image: url(https://i.redd.it/k7uhsoszpcz61.jpg);
+  }
+  .foto:nth-child(2){
+      grid-area: f2;
+      background-image: url(https://i.pinimg.com/originals/69/cc/f4/69ccf4b3cb15a77b297c67a191dcb16d.jpg);
+  }
+  .foto:nth-child(3){
+      grid-area: f3;
+      background-image: url(https://i.pinimg.com/564x/e2/2f/2a/e22f2af1de0835722fcdc78e50005311.jpg);
+  }
+  .foto:nth-child(4){
+      grid-area: f4;
+      background-image: url(https://1.bp.blogspot.com/-_HwESFFo8tc/XptPcrajqiI/AAAAAAAANdM/Mj7boQYUTZo52G1oylqIumgjQ4ynTxzsgCLcBGAsYHQ/s1600/Princesa%2BMononoke%2BStudio%2BGhibli%2BNetflix.jpg);
+  }
+  .foto:nth-child(5){
+      grid-area: f5;
+      background-image: url(https://1.bp.blogspot.com/-4EFqBvBQEaw/XptM5BOqMKI/AAAAAAAANck/LIr4GIw9B80geZKO2uq3--66iyxi0sgpQCLcBGAsYHQ/s1600/O%2BServi%25C3%25A7o%2Bde%2BEntregas%2Bda%2BKiki%2BStudio%2BGhibli%2BNetflix.jpg);
+  }
+  .foto:nth-child(6){
+      grid-area: f6;
+      background-image: url(https://m.media-amazon.com/images/I/A10mcxetgHL.jpg);
+  }
+  .foto:nth-child(7){
+      grid-area: f7;
+      background-image: url(https://br.web.img2.acsta.net/pictures/14/02/21/16/51/373214.jpg);
+  }
+  .foto:nth-child(8){
+      grid-area: f8;
+      background-image: url(https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABY48sl08DmbegLqkTdH5JURwVne2ypzDpWFMRDV8e0KcT1Kgs23AdDQYo4Zw25z6De4r6Tt5smjw-MsMIsiC2SQ6W-gK.jpg);
+  }
+  .foto:nth-child(9){
+      grid-area: f9;
+      background-image: url(https://m.media-amazon.com/images/M/MV5BZDY3ZGI0ZDAtMThlNy00MzAxLTg4YjAtNjkwYTkxNmQ4MjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg);
+  }
+  .foto:nth-child(10){
+      grid-area: f10;
+      background-image: url(https://m.media-amazon.com/images/M/MV5BYThhZDdiMjItYzRkNy00OTE3LTk5ZDEtMzUwNzE1ZmJkMTYzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg);
+  }
+  .foto:nth-child(11){
+      grid-area: f11;
+      background-image: url(https://br.web.img2.acsta.net/pictures/bzp/05/10257.jpg);
+  }
+  .foto:nth-child(12){
+      grid-area: f12;
+      background-image: url(https://occ-0-300-299.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABSGh1a7dfrqQ_xLf3x-xgOTOCIZHUjxEb9gjFumCVvnnYNvD-Zf_vDr-v0BA6IddAM2FrAydTUP4j5KdEwSSj15Q7f7Z.jpg);
+  }
+  .foto__info{
+      position: absolute;
+      width: 100%;
+      height: 48px;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      transform: translateY(100%);
+      transition: 1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  .foto:hover > .foto__info{
+      transform: translateY(0);
+  
+  }
+  
+  
+  
+  
+  .Ghibli_Story{
+    height: 700px;
+    width: 828px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Story_Img{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: -350px;
+    left: -50px;
+  }
+  .Story_Sobre{
+    width: 500px;
+    height: 460px;
+    padding: 40px;
+    border: 20px solid #E7689D;
+  }
+  .Story_titulo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: grey;
+    font-size: 50px;
+  }
+  .Story_texto{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: top;
+    justify-content: end;
+  }
+  .Story_texto p{
+    text-align: right;
+     width: 70%;
+  }
+  .Story_Img2{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: -20px;
+    left: -630px;
+  }
+  .Story_Img3{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: -250px;
+    left: -140px;
+  }
+  .Story_Img3pt2{
+     transform: scaleX(-1);
+  }
+  .Story_botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Story_botao p{
+    background-color: #fdfd96;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Story_botao p:hover{
+    background-color: #fff;
+    border: 3px solid #E7689D;
+  }
+  
+  
+  .Div_Img{
+    background-image: url(https://pbs.twimg.com/media/EJc-CikXUAEVnkn.jpg:large);
+    background-size: cover;
+    height: 500px;
+  }
+  .trasparencia1{
+    height: 300px;
+    background: linear-gradient(to top, transparent 30%, rgba(255, 255, 255, 1) 100%);
+  }
+  .trasparencia2{
+    height: 200px;
+     background: linear-gradient(to bottom, transparent 30%, rgba(255, 255, 225, 1) 100%);
+  }
+  
+  
+  
+  .Section_Characters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    width: 828px;
+  }
+  .Characters_All{
+    
+    border-radius: 20px;
+    border: 7px dotted pink;
+    height: 650px;
+    width: 730px;
+  }
+  .Characters_title{
+    color: #E7689D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 730px;
+    font-size: 30px;
+  }
+  .Characters_content{
+    height: 550px;
+    width: 730px;
+    display: flex;
+    place-items: start;
+    justify-content: space-around;
+  }
+  .Characters_content p{
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+  }
+  .Characters_1{
+    background-color: #8B1E2B;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .Characters_Img1{
+     background-image: url(https://media.npr.org/assets/img/2012/02/17/c00900069_1280_wide-45c87740133ae6a26b3c3348b56239c69a5403fc-s1100-c50.jpg);
+    background-size: cover;
+    background-position-x: 25%;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .Characters_Img1 img{
+    position: relative;
+    top: 250px;
+    left: 10px;
+  }
+  .Characters_1 p{
+     height: 100px;
+    width: 270px;
+    display: flex;
+    place-items: center;
+    justify-content: end;
+  }
+  .Characters_2{
+    background-color: #E5C883;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .Characters_Img2{
+     background-image: url(https://pbs.twimg.com/media/EaMNo9YXQAAcjgU.jpg:large);
+    background-size: cover;
+    background-position-x: 45%;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .Characters_Img2 img{
+    position: relative;
+    top: 250px;
+    left: 10px;
+    border-radius: 0px 0px 0px 57%;
+  }
+  .Characters_2 p{
+     height: 100px;
+    width: 270px;
+    display: flex;
+    place-items: center;
+    justify-content: start;
+    padding-left: 20px;
+  }
+  
+  .Div_img3{
+    display:none;
+     position: relative;
+    top: -400px;
+    left:  250px;
+  }
+  
+  footer{
+    background-color: #E7689D;
+    width: 850px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  
+  
