@@ -208,15 +208,7 @@
       "f4 f5 f6 f11"
       "f7 f8 f9 f12";
   }
-  .foto{
-      margin: 14px;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-  }
+  
   .foto:nth-child(1){
       grid-area: f1;
       background-image: url(https://i.redd.it/k7uhsoszpcz61.jpg);
@@ -265,7 +257,15 @@
       grid-area: f12;
       background-image: url(https://occ-0-300-299.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABSGh1a7dfrqQ_xLf3x-xgOTOCIZHUjxEb9gjFumCVvnnYNvD-Zf_vDr-v0BA6IddAM2FrAydTUP4j5KdEwSSj15Q7f7Z.jpg);
   }
-  .foto__info{
+.foto{
+      margin: 14px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }  .foto__info{
       position: absolute;
       width: 100%;
       height: 48px;
@@ -486,5 +486,188 @@
     color: #fff;
   }
   
+
+  @media(max-width:768px){
+
+    .all{
+      background-color: #fff;
+      width: 350px;
+      box-shadow: 0px 3px 30px #464646;
+      
+    }
+
+    header{
+      width: 350px;
+      height: 100px;
+      padding: 0px;
+      padding-top: 12px;
+    }
+    nav{
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav_parte1{
+      width: 300px;
+     
+    }
+    .logo_menu{
+      display: none;
+    }
+    .logo_studioGhibli{
+      width: 150px;
+      height: 70px;
+    }
+    .nav_parte2{
+      width: 150px;
+      height: 100px;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+    }
+    .personal{
+      width: 100px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .personal p{
+      background-color: #E7689D;
+      border-radius: 20px;
+      width: 150px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+    }
+    
+    .profile{
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 14px;
+    }
+    .profile p:hover{
+      cursor: pointer;
+    }
+    .icon{
+      
+      width: 40px;
+      height: 40px;
+    }
+
+    main{
+      width: 100vw;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+    }
+    .slider{
+      width: 320px;
+      height: 190px;
+      overflow: hidden;
+      position: absolute;
+      border-radius: 20px;
+    }
+    .navigation-bar{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+    }
+    .manual-btn{
+      border: 2px solid #fff;
+      padding: 2px;
+      border-radius: 24px;
+      cursor: pointer;
+      height: 5px;
+      width: 5px;
+    }
+    .Section_Nav{
+      display: none;
+      
+    }
+    
+    .Section_Nav p:nth-child(1){
+      display: none;
+    }
+    .Section_Nav p:nth-child(2){
+      display: none;
+    }
+    .Section_Nav p:nth-child(3){
+      display: none;
+    }
+
+
+
+
+
+    .Photo_Gallery{
+      padding: 0px;
+      width: 350px;
+      height: 1400px;
+      display: flex;
+      align-items: center;
+    }
+    .Photos{
+    
+      width: 350px;
+      height: 1400px;
+      display: grid;
+      grid-template-areas: 
+        "f1 f2"
+        "f4 f5"
+        "f7 f8"
+        "f10 f11"
+        "f12 f3"
+        "f6 f9";
+    }
+    .foto{
+      
+      margin: 12px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .Ghibli_Story{
+    display: none;
+  }
+  .Section_Characters{
+    display: none;
+  }
+  footer{
+    
+    width: 350px;
+    
+  }
+
+
+  body{
+    background-color: #fff;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .all{
+    background-color: #fff;
+    box-shadow: 0px 3px 30px #464646;
+    
+  }
+   
+
+  }
   
   
